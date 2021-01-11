@@ -1,7 +1,7 @@
 {
-  "name": "maqueta-base",
-  "version": "1.0.0",
-  "description": "Maqueta base (Ejemplo de como deberia funcionar la libreria sudo)",
+  "name": "lib_sudo_front-end",
+  "version": "1.0.1",
+  "description": "libreria front-end sudp (Ejemplo de como deberia funcionar la libreria)",
   "main": "index.js",
   "webpack-cli": "^3.3.5",
   "scripts": {
