@@ -1,6 +1,6 @@
 {
   "name": "lib_sudo_front-end",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "libreria front-end sudp (Ejemplo de como deberia funcionar la libreria)",
   "main": "index.js",
   "webpack-cli": "^3.3.5",
