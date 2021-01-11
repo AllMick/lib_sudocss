@@ -14,8 +14,8 @@ mix.pug = require('laravel-mix-pug');
 
  mix.sass('sass/app.scss', 'css')
      .js('js/app.js', 'js')
-     .copy('images/', './assets/images')
-     .copy('fonts/', './assets/fonts')
+    //  .copy('images/', './assets/images')
+    //  .copy('fonts/', './assets/fonts')
     //  .copy('php/', './app/php')
      .setPublicPath('assets')
      .browserSync({
