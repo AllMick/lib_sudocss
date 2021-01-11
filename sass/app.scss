@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+//abstract
+@import
+  'abstract/mixins',
+  'abstract/var',
+  'abstract/zindex',
+  'abstract/font';
+
+//layout
+@import
+  'layout/default',
+  'layout/footer',
+  'layout/header';
+
+//components
+@import
+  'components/icon';
+ 
+//pages
+//@import
+
+@import
+  'vendor/animate';
+

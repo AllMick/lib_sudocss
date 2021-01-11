@@ -1,0 +1,182 @@
+*{
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html,body{
+  width: 100%;
+}
+body{
+  font-size: 1rem; //1.17vw
+  font-family: '', sans-serif;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/*Reset*/
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p{
+  margin: 0;
+  strong{
+    font-weight: bold;
+  }
+}
+
+.p-relative{
+  position: relative;
+}
+
+.p-absolute{
+  position: absolute;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-block{
+  display: block;
+}
+
+.d-none{
+  display: none;
+}
+
+.noposition{
+  position: inherit;
+}
+
+.hide-sm{
+  @media (max-width: $mq-sm){
+    display: none;
+  }
+}
+
+.w-fit{
+  width: fit-content !important;
+}
+
+// margin /////////////////////////////////////////////////////////////////////////
+
+@for $i from 1 to 5 {
+  .mt-#{$i} {
+    margin-top:                          #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .mb-#{$i} {
+    margin-bottom:                       #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .ml-#{$i} {
+    margin-left:                         #{$i}rem;
+  }
+}
+@for $i from 1 to 5 {
+  .mr-#{$i} {
+    margin-right:                        #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .my#{$i} {
+    margin-top:                          #{$i}rem;
+    margin-bottom:                       #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .mx#{$i} {
+    margin-left:                          #{$i}rem;
+    margin-right:                         #{$i}rem;
+  }
+}
+
+// padding //////////////////////////////////////////////////////////////////////
+
+@for $i from 1 to 5 {
+  .pt-#{$i} {
+    padding-top:                         #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .pb-#{$i} {
+    padding-bottom:                      #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .pl-#{$i} {
+    padding-left:                        #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .pr-#{$i} {
+    padding-right:                       #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .px#{$i} {
+    padding-left:                        #{$i}rem;
+    padding-right:                       #{$i}rem;
+  }
+}
+
+@for $i from 1 to 5 {
+  .py#{$i} {
+    padding-top:                         #{$i}rem;
+    padding-bottom:                      #{$i}rem;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+.W100P {
+  width:                                 100%;
+}
+
+.text-left {
+  text-align:                            left;
+}
+
+.text-center {
+  text-align:                            center;
+}
+
+.text-right {
+  text-align:                            right;
+}
+
+.text-justify {
+  text-align:                            justify;
+}
+
+.align-bottom {
+  align-items:                           flex-end !important;
+}
+
+.justify-end {
+  justify-content:                       flex-end !important;
+}
+

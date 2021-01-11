@@ -1,0 +1,24 @@
+//Z-index de header
+.header{
+    z-index: 4;
+}
+//Layout
+.backimage{
+    z-index: -1;
+}
+//Loader
+.loader{
+    z-index: 6;
+}
+
+//slider normal
+.slickNormal{
+    .slick-prev{
+      z-index: 3;
+    }
+}
+
+//default
+.upbutton{
+    z-index: 5;
+}

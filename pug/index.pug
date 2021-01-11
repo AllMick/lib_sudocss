@@ -1,0 +1,29 @@
+doctype html
+html(lang="es" dir="ltr")
+  include parts/head.pug
+  body
+    include parts/header.pug
+    .page_wrapper        
+      .section
+        h1.title!= "Titulo de prueba"
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore odio vel molestiae deserunt minus officia, nostrum debitis reiciendis saepe deleniti laudantium ipsam repudiandae asperiores blanditiis. Qui reiciendis quia velit dicta.
+        ul
+          li!= "lorem ipsum"
+          li!= "lorem ipsum"
+          li!= "lorem ipsum"
+          li!= "lorem ipsum"
+        button.btn botón
+      
+      .section
+        .d-flex
+          div
+            span.text-left Texto
+          div
+            span.text-center Texto
+          div
+            span.text-right Texto
+
+    include parts/footer.pug
+    
+
+

@@ -1,0 +1,61 @@
+@mixin gridStandar($colTemplate, $rowTemplate, $gap){
+    display: grid;
+    grid-template-columns: $colTemplate;
+    grid-template-rows: $rowTemplate;
+    grid-gap: $gap;
+}
+
+@mixin center($type){
+    @if $type == ejex {
+        left: 50%;
+        transform: translateX(-50%);
+    } @else if $type == ejey {
+        top: 50%;
+        transform: translateY(-50%);
+    } @else {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@mixin centerReset(){
+    left: inherit;
+    top: inherit;
+    transform: none;
+}
+
+@mixin maxWidth($max){
+    width: 100%;
+    max-width: $max;
+    margin: 0 auto;
+}
+
+@mixin backImg($ancho, $alto, $name, $size){
+    width: $ancho;
+    height: $alto;
+    background: url(#{$r-images}#{$name}) no-repeat center;
+    background-size: $size;
+}
+  
+@mixin letransition($ledelay: null) {
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    @if ($ledelay) {
+        transition-delay: $ledelay;
+    }
+}
+
+@mixin fontCall($name, $peso){
+    src: url("#{$r-font}#{$name}.otf") format("opentype");
+    /*src: url("#{$r-font}#{$name}.eot"); 
+    src: url("#{$r-font}#{$name}.eot?#iefix") format("embedded-opentype"), 
+    url("#{$r-font}#{$name}.woff2") format("woff2"),
+    url("#{$r-font}#{$name}.woff") format("woff"),
+    url("#{$r-font}#{$name}.ttf") format("truetype"),
+    url("#{$r-font}#{$name}.svg##{$name}") format("svg");*/
+    font-weight: $peso;
+}
+@mixin fontCallTwo($name, $peso){
+    src: url("#{$r-font}#{$name}.ttf") format("truetype");
+    font-weight: $peso;
+}

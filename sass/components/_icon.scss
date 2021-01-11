@@ -1,0 +1,9 @@
+.icon{
+    display: inline-block;
+    &.banner_icon{
+        @include backImg(135px, 115px, "icon-banner.svg", contain);
+    }
+    &.arrow-r{
+        @include backImg(18px, 18px, "icon-arrow-r.svg", contain);
+    }
+}

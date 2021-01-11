@@ -1,0 +1,33 @@
+{
+  "name": "maqueta-base",
+  "version": "1.0.0",
+  "description": "Maqueta base (Ejemplo de como deberia funcionar la libreria sudo)",
+  "main": "index.js",
+  "webpack-cli": "^3.3.5",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "SUDO",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.2.0",
+    "jquery": "^3.4.0",
+    "laravel-mix": "^5.0.5",
+    "laravel-mix-pug": "^0.3.0",
+    "pug": "^2.0.3",
+    "sass": "^1.19.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
