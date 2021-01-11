@@ -12,22 +12,15 @@ mix.pug = require('laravel-mix-pug');
  |
  */
 
- mix.sass('resource/sass/app.scss', 'css')
-     .js('resource/js/app.js', 'js')
-     .pug('resource/pug/*.pug', './../../app', {
-       pug: {
-         pretty: true,
-         debug: false
-       }
-     })
-     .copy('resource/images/', './app/assets/images')
-     .copy('resource/fonts/', './app/assets/fonts')
+ mix.sass('sass/app.scss', 'css')
+     .js('js/app.js', 'js')
+     .copy('images/', './assets/images')
+     .copy('fonts/', './assets/fonts')
     //  .copy('php/', './app/php')
-     .setPublicPath('app/assets')
+     .setPublicPath('assets')
      .browserSync({
         proxy: false,
         port: '3000',
-        server: './app',
         files: [
           'resource/pug/**/*.pug',
           'app/assets/css/*.css',
